@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
-
 gemspec
+gem 'varia_model', git: 'git@github.com:sbasir/varia_model'
 
 platforms :jruby do
   gem 'jruby-openssl'
@@ -45,5 +45,5 @@ group :test do
   gem 'fuubar'
   gem 'json_spec'
   gem 'webmock'
-  gem 'chef-zero', '~> 1.5.0'
+  gem 'chef-zero', git: 'git@github.com:sbasir/chef-zero', branch: 'ih'
 end
